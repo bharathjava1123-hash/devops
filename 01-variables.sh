@@ -1,12 +1,12 @@
 echo "Enter USER NAME"
 
-READ USERNAME
+read USERNAME
 
 echo "your USER NAME is : $USERNAME"
 
 echo "Enter PASSWORD"
 
-READ PASSWORD
+read PASSWORD
 
 echo "your USER NAME is : $PASSWORD"
 
