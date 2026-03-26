@@ -1,4 +1,4 @@
-names=("bharath","Yamini","Samyuktha")
+names=("bharath" "Yamini" "Samyuktha")
 
 echo "first name is : ${names[0]}"
 echo "second name is : ${names[1]}"
