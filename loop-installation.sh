@@ -46,7 +46,7 @@ do
 dnf list installed $package &>>$LOG_FILE
 if [ $? -ne  0 ] 
  then
-  echo "Git is not installed, going to install it.." | tee -a $LOG_FILE
+  echo "$package is not installed, going to install it.." | tee -a $LOG_FILE
   dnf install $package -y &>>$LOG_FILE
   VALIDATE $? "Installing $package"
  else 
