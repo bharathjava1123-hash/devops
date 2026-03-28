@@ -31,6 +31,6 @@ if [ $? -ne  0 ]
   dnf install $package -y
   VALIDATE $? "git installion"
  else 
-   echo "Git is already installed, nothing to do it.."
+   echo -e "Git is already $Y installed, nothing to do it.. $N"
 fi   
 done
