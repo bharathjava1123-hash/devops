@@ -11,10 +11,10 @@ fi
 VALIDATE(){
    if [ $1 -ne 0]
      then 
-      echo "$2 not success, Please check it..."
+      echo "$2 is not success, Please check it..."
       exit 1
      else
-      echo "$2 installation success"
+      echo "$2 is success"
     fi
 }
 
@@ -24,7 +24,7 @@ if [ $? -ne  0 ]
  then
   echo "Git is not installed, going to install it.."
   dnf install git -y
-  VALIDATE $? "git installion" 
+  VALIDATE $? "git installion"
  else 
    echo "Git is already installed, nothing to do it.."
 fi   
