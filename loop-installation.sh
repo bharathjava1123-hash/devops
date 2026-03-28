@@ -43,11 +43,11 @@ echo "Script started executing at: $(date)" | tee -a $LOG_FILE
 
 for package in $@
 do
-dnf list installed $package | tee -a $LOG_FILE
+dnf list installed $package &>>$LOG_FILE
 if [ $? -ne  0 ] 
  then
   echo "Git is not installed, going to install it.." | tee -a $LOG_FILE
-  dnf install $package -y | tee -a $LOG_FILE
+  dnf install $package -y &>>$LOG_FILE
   VALIDATE $? "Installing $package"
  else 
    echo -e "$package is already $Y installed, nothing to do it.. $N" | tee -a $LOG_FILE
