@@ -33,7 +33,7 @@ USAGE(){
     exit 1
 }
 
-if [ $# -ne 0 ]
+if [ $# -eq 0 ]
   then
     USAGE
 fi
